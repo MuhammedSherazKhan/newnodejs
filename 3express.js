@@ -67,8 +67,10 @@ app.get('/menu',async(req,res)=>{
     }
 })
 
-
-app.listen(2000,()=>{
+require('dotenv').config()
+// Now you can access your environment variables using process.env
+const port=process.env.port||2000
+app.listen(port,()=>{
     console.log('got listened');
 })
 // now a local host of as:localhost:500 is created
