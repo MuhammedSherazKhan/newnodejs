@@ -69,7 +69,7 @@ app.get('/menu',async(req,res)=>{
 
 require('dotenv').config()
 // Now you can access your environment variables using process.env
-const port=process.env.port||2000
+const port=process.env.port||4000
 app.listen(port,()=>{
     console.log('got listened');
 })
