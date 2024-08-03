@@ -10,7 +10,7 @@ const mongoURL=process.env.url
 
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useUnifiedTopology: true,
   serverSelectionTimeoutMS: 30000, // Increase the timeout to 30 seconds`
   socketTimeoutMS: 60000, // Increase socket timeout to 60 seconds
 });
